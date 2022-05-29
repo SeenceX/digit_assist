@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+
+#useful{
+    font-weight: bolder;
+    border-bottom: 2px solid #615FC5;
+}
+
+#des{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #262626;
+    margin-bottom: 8px;
+}
+
+#des:nth-child(3){
+    margin-bottom: 48px;
+}
+
+#i{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #615FC5;
+    text-decoration: none;
+}
+
+.title{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #211919;
+    margin-bottom: 32px;
+}
+
+.title i{
+    font-style: normal;
+    color: #615FC5;
+}
+
+.det{
+    display: flex;
+    flex-direction: column;
+}
+
+details{
+
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #262626;
+    margin-bottom: 32px;
+    position: relative;
+    display: block;
+
+}
+
+details[open]{
+    margin-bottom: 32px;
+    display: block;
+}
+
+details div{
+    display: block;
+    background: #FFFFFF;
+    padding: 8px 24px 0 24px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+}
+
+
+details summary{
+    border-radius: 8px;
+    cursor: pointer;
+    background: #F1F1FF;
+    padding: 12px 24px;
+}
+
+details summary:hover{
+    background: #615FC5;
+    color: #FFFFFF;
+}
+
+.form{
+    width: 936px;
+    height: 496px;
+    border-radius: 8px;
+    background: #F1F1FF;
+    padding: 48px 0 48px 96px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
+}
+
+#ask{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #211919;
+}
+
+#desk{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    margin-bottom: 32px;
+}
+
+#email{
+    width: 360px;
+    height: 40px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    border: 1px solid #615FC5;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    margin-bottom: 16px;
+}
+
+#textarea{
+    width: 456px;
+    height: 152px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px 24px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    margin-bottom: 32px;
+    resize: none;
+}
+
+#send{
+    background: #615FC5;
+    box-shadow: 2px 4px 10px rgba(69, 72, 183, 0.2);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 39px;
+    width: 168px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+}
+
+.col form{
+    display: flex;
+    flex-direction: column;
+}

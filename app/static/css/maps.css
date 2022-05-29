@@ -1,0 +1,94 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-pro');
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 32px;
+}
+
+#maps{
+    font-weight: bolder;
+    border-bottom: 2px solid #615FC5;
+}
+
+button{
+    height: 40px;
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #262626;
+}
+
+button:first-child{
+    background: #615FC5;
+    color: #FFFFFF;
+}
+
+button:hover{
+    background: #615FC5;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.select_floor{
+    height: 40px;
+    width: 168px;
+    border-radius: 8px;
+    border: 1px solid #615FC5;
+    margin-left: 142px;
+}
+
+select{
+    width: 79px;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    text-align: center;
+
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+.select_floor span{
+    width: 1px;
+    font-size: 24px;
+    color: rgba(97, 95, 197, 0.2);
+}
+
+.select_floor span:last-child{
+    background: none;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content img{
+    width: 100%;
+}

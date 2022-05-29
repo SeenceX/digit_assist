@@ -1,0 +1,174 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-pro');
+#schedule{
+    font-weight: bolder;
+    border-bottom: 2px solid #615FC5;
+}
+
+.submit-inp{
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: url(/img/img/search.svg) no-repeat;
+    outline: none;
+}
+
+form{
+    margin-bottom: 32px;
+    margin-left: 24px;
+    width: 264px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid #615FC5;
+    border-radius: 40px;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form label{
+    display: none;
+}
+
+#id_poisk_name{
+    border: none;
+    outline: none;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    height: 38px;
+    width: 90%;
+}
+
+.select_week{
+    height: 40px;
+    width: 264px;
+    border-radius: 8px;
+    border: 1px solid #615FC5;
+    padding: 0 24px;
+}
+
+select{
+    width: 153px;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    text-align: center;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+.select_week span{
+    width: 1px;
+    font-size: 24px;
+    color: rgba(97, 95, 197, 0.2);
+}
+
+.select_week span:last-child{
+    background: none;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.col-4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.days{
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.days:nth-child(4n+4){
+    margin-right: 0;
+}
+
+.day{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+
+.lesson{
+    width: 264px;
+    height: 200px;
+    left: 76px;
+    top: 192px;
+    background: #F1F1FF;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.days .lesson:nth-child(4n){
+    margin-right: 0px;
+}
+
+#time{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+    margin-bottom: 8px;
+}
+#subj{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #262626;
+}
+#teacher{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+    margin-bottom: 8px;
+}
+#place{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}

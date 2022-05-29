@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <button id="btn1">Новый корпус</button>
+                <button id="btn2">Переход</button>
+                <button id="btn3">Старый корпус</button>
+            </ul>
+            <div class="select_floor">
+                <select id="select" name="floors" id="">
+                    <option value="new_1" selected>1</option>
+                    <option value="new_2">2</option>
+                    <option value="new_3">3</option>
+                    <option value="new_4">4</option>
+                    <option value="new_5">5</option>
+                    <option value="new_6">6</option>
+                    <option value="new_7">7</option>
+                    <option value="new_8">8</option>
+                    <option value="new_9">9</option>
+                </select>
+                <span>|</span>
+                <span>этаж</span>
+            </div>
+        </div>
+        <div class="content"></div>
+    </div>
+
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+        $('.content').empty();
+        $('.content').append('<img src="/img/floors/new_1.svg" alt="">');
+    });
+    $('#select').change(function (){
+        var text = $('#select option:selected').val();
+        console.log(text);
+        switch (text){
+            case 'new_1':
+                $('.content').empty()
+                $('.content').append('<img src="/img/floors/new_1.svg" alt="">');
+                break;
+            case 'new_2':
+                $('.content').empty()
+                $('.content').append('<img src="/img/floors/new_2.svg" alt="">');
+                break;
+            case 'new_3':
+                $('.content').empty()
+                $('.content').append('<img src="/img/floors/new_3.svg" alt="">');
+                break;
+            case 'new_4':
+                $('.content').empty()
+                $('.content').append('<img src="/img/floors/new_4.svg" alt="">');
+                break;
+            case 'new_5':
+                $('.content').empty()
+                $('.content').append('<img src="/img/floors/new_5.svg" alt="">');
+                break;
+            case 'new_6':
+                $('.content').empty()
+                $('.content').append('<img src="/img/floors/new_6.svg" alt="">');
+                break;
+            default:
+                $('.content').empty()
+                break
+        }
+
+    })
+    $('#btn1').click(function (){
+        $(this).css({"background":"#615FC5", "color": "#FFFFFF"});
+        $('#btn2').css({"background": "transparent", "color" : "#262626"});
+        $('#btn3').css({"background": "transparent", "color" : "#262626"});
+        $('#select').empty();
+        for(i = 1; i < 10; i++){
+            $('#select').append('<option value="new_' + i + '">' + i + '</option>');
+        $('.content').empty()
+        $('.content').append('<img src="/img/floors/new_1.svg" alt="">');
+        }
+    })
+    $('#btn2').click(function (){
+        $(this).css({"background":"#615FC5", "color": "#FFFFFF"});
+        $('#btn1').css({"background": "transparent", "color" : "#262626"});
+        $('#btn3').css({"background": "transparent", "color" : "#262626"});
+        $('#select').empty();
+        $('#select').append('<option value="transition_2">2</option>');
+        $('.content').empty()
+        $('.content').append('<img src="/img/floors/perehod.svg" alt="">');
+    })
+    $('#btn3').click(function (){
+        $(this).css({"background":"#615FC5", "color": "#FFFFFF"});
+        $('#btn1').css({"background": "transparent", "color" : "#262626"});
+        $('#btn2').css({"background": "transparent", "color" : "#262626"});
+        $('#select').empty();
+        for(i = 1; i <=5; i++)
+            $('#select').append('<option value="old_' + i + '">' + i  +'</option>');
+        $('.content').empty()
+        $('.content').append('<img src="/img/floors/old_1.png" alt="">');
+    })
+    </script>
+
+{% endblock %}

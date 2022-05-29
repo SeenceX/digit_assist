@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+    <div class="container">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" class="submit-inp" value="">
+        </form>
+        <div class="telo">
+        {% if data and data != 'not_found' %}
+            <div class="rows">
+            {% for item in data %}
+            <div class="card">
+                {% if item.0 == None %}
+                    <img id="avatar" style="border:none;" src="/img/img/avatar.svg" alt="">
+                {% else %}
+                    <img id="avatar" src="{{ item.0 }}" alt="">
+                {% endif %}
+                <div class="desc">
+                    <div>
+                        <p id="fio">{{ item.1 }}</p>
+                        <p id="position">{{ item.2 }}</p>
+                        <p id="cath">{{ item.3 }}</p>
+                    </div>
+
+                    <div>
+                        <p id="email">{{ item.4 }}</p>
+                        {% if item.5 == None %}
+                        {% else %}
+                        <p id="phone">{{ item.5 }}</p>
+                    </div>
+                    {% endif %}
+
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+        {% else %}
+            {% if data == 'not_found' %}
+                <p class="not_found">Преподаватель не найден</p><br>
+            {% endif %}
+            <img class="bckgr_teacher" src="/img/img/teacher_prev.svg" alt="">
+
+        {% endif %}
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $( document ).ready(function() {
+            $("#id_poisk_name").attr("placeholder", "Введите фамилию преподавателя")
+        });
+    </script>
+
+{% endblock %}

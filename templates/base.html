@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if title == 'Главная страница' %}
+        <link rel="stylesheet" type="text/css" href="{% static "css/frames.css" %}"/>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}"/>
+    {% if title == 'Списки групп' %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/groups.css" %}"/>
+    {% endif %}
+    {% if title == 'Полезное' %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/useful.css" %}"/>
+    {% endif %}
+    {% if title == 'Карта аудиторий' %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/maps.css" %}"/>
+    {% endif %}
+    {% if title == 'Список преподавателей' %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/teachers.css" %}"/>
+    {% endif %}
+    {% if title == 'Структура' %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/struct.css" %}"/>
+    {% endif %}
+    {% if title == 'Расписание' %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/schedule.css" %}"/>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/header.css" %}"/>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% include 'inc/_header.html' %}
+    <main>
+        {% block container %} {% endblock %}
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-pro');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 76px;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.h_ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.h_ul_a{
+    text-decoration: none;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+
+.h_ul_li{}
+
+
+

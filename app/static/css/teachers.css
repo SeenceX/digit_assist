@@ -1,0 +1,138 @@
+.bckgr_teacher{
+    width: 344px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#teachers{
+    font-weight: bolder;
+    border-bottom: 2px solid #615FC5;
+}
+
+form{
+    margin-bottom: 32px;
+    width: 456px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid #615FC5;
+    border-radius: 40px;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form label{
+    display: none;
+}
+
+#id_poisk_name{
+    border: none;
+    outline: none;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    height: 38px;
+    width: 90%;
+}
+
+.submit-inp{
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: url(/img/img/search.svg) no-repeat;
+    outline: none;
+}
+
+.telo{
+    display: flex;
+    align-items: center;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    height: 240px;
+    width: 552px;
+    margin-bottom: 24px;
+}
+
+.card img{
+    width: 168px;
+    border: 2px solid #4548B7;
+    border-radius: 8px;
+}
+
+.not_found{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #262626;
+}
+.desc{
+    padding: 8px 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#fio{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+#position{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    margin-bottom: 8px;
+}
+
+#cath{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #979797;
+    margin-bottom: 40px;
+}
+
+#email, #phone{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+
+#email{
+    margin-bottom: 8px;
+}

@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#groups{
+    font-weight: bolder;
+    border-bottom: 2px solid #615FC5;
+}
+
+form{
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.disc{
+    border-radius: 40px;
+    height: 40px;
+    width: 168px;
+    background: #615FC5;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#id_group_name{
+    padding: 16px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    border: none;
+    height: 100%;
+    outline: none;
+    width: 341px;
+}
+
+.submit-inp{
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: url(/img/img/search.svg) no-repeat;
+    outline: none;
+}
+
+.g_name{
+    margin-left: 72px;
+    margin-bottom: 28px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #262626;
+}
+
+form{
+    width: 552px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    border: 1px solid #615FC5;
+}
+
+label{
+    display: none;
+}
+
+.telo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.not_found{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #262626;
+}
+
+.bckgr_group{
+    max-width: 651px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+
+tr{
+    height: 40px;
+    border-bottom: 1px solid #E6EBEE;
+}
+
+tr:last-child{
+    border: none;
+}
+
+th{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #979797;
+    text-align: left;
+}
+
+th:first-child{
+    text-align: center;
+}
+th:last-child{
+    text-align: right;
+    padding-right: 16px;
+}
+
+td{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    text-align: left;
+}
+
+td:first-child, td:last-child{
+    color: #979797;
+}
+
+td:first-child{
+    width: 72px;
+    text-align: center;
+}
+
+td:last-child{
+    width: 168px;
+    text-align: right;
+    padding-right: 16px;
+}

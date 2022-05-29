@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block container %}
+    <div class="container">
+        <div class="nav">
+            <div class="select_week">
+                <select id="select" name="weeks" id="">
+                    <option value="30.05 - 05.06" selected>30.05 - 05.06</option>
+                </select>
+                <span>|</span>
+                <span>2022</span>
+            </div>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input id="id_poisk_name" value="ИДБ-21-02" type="text" placeholder="Группа">
+                <input type="submit" class="submit-inp" value="">
+            </form>
+        </div>
+
+        <div class="col-4">
+            <div class="days">
+                <p class="day">Понедельник</p>
+                <div class="lesson">
+                    <div>
+                        <p id="time">10:20 - 12:00</p>
+                        <p id="subj">Высокоэффективные технологии и оборудование современных производств</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Яковлев М.Г.</p>
+                        <p id="place">0308</p>
+                    </div>
+                </div>
+                <div class="lesson">
+                    <div>
+                        <p id="time">12:20 - 12:00</p>
+                        <p id="subj">Математический анализ</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Петросян Н.С.</p>
+                        <p id="place">0308</p>
+                    </div>
+                </div>
+            </div>
+            <div class="days">
+                <p class="day">Вторник</p>
+                <div class="lesson">
+                    <div>
+                        <p id="time">08:30 - 10:10</p>
+                        <p id="subj">Физическая культура</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Жук А.П.</p>
+                        <p id="place">Стадион</p>
+                    </div>
+                </div>
+            </div>
+            <div class="days">
+                <p class="day">Среда</p>
+                <div class="lesson">
+                    <div>
+                        <p id="time">10:20 - 12:00</p>
+                        <p id="subj">Программирование на языке высокого уровня</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Носовицкий В.Б.</p>
+                        <p id="place">0308</p>
+                    </div>
+                </div>
+            </div>
+            <div class="days">
+                <p class="day">Четверг</p>
+                <div class="lesson">
+                    <div>
+                        <p id="time">10:20 - 12:00</p>
+                        <p id="subj">Программирование на языке высокого уровня (лаб)</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Куликова Г.А.</p>
+                        <p id="place">214</p>
+                    </div>
+                </div>
+                <div class="lesson">
+                    <div>
+                        <p id="time">12:20 - 14:00</p>
+                        <p id="subj">Программирование на языке высокого уровня (лаб)</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Куликова Г.А.</p>
+                        <p id="place">214</p>
+                    </div>
+                </div>
+            </div>
+            <div class="days">
+                <p class="day">Пятница</p>
+                <div class="lesson">
+                    <div>
+                        <p id="time">10:20 - 12:00</p>
+                        <p id="subj">Дискретная математика</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Салиева О.А.</p>
+                        <p id="place">Дистант</p>
+                    </div>
+                </div>
+            </div>
+            <div class="days">
+                <p class="day">Суббота</p>
+                <div class="lesson">
+                    <div>
+                        <p id="time">10:20 - 12:00</p>
+                        <p id="subj">Физика</p>
+                    </div>
+                    <div>
+                        <p id="teacher">Новосёлов А.А.</p>
+                        <p id="place">0410</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}

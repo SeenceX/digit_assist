@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+    <div class="container">
+        <h2 class="title">Полезные <i>ссылки</i></h2>
+        <p id="des"><i id="i">@stankin_bot</i> - бот в телеге с полезной информацией от профкома :*</p>
+        <p id="des"><a id="i" href="https://lk.stankin.ru/#!login">https://lk.stankin.ru/#!login<a> - ЛК</p>
+
+        <h2 class="title">Часто задаваемые <i>вопросы</i>:</h2>
+
+        <details>
+            <summary>Что значит "0" перед номером кабинета?</summary>
+            <div>
+                <p>Это означает, что нужный Вам кабинет или аудитория находится в новом корпусе университета.</p>
+                <p>Если "0" отсутствует, то кабинет/аудитория находятся в старом корпусе.</p>
+            </div>
+        </details>
+
+
+        <details>
+            <summary>Где взять справку для военкомата?</summary>
+            <div>
+                <p>Второй отдел - кабинет 0605<br>+7(499)972-94-24</p>
+            </div>
+
+        </details>
+        <details>
+            <summary>Где взять справку с место учебы?</summary>
+            <div>
+                <p>Отдел управления персоналом - кабинет 0609<br>+7(499)972-95-13</p>
+            </div>
+
+        </details>
+        <details>
+            <summary>Где взять справку о периоде обучения или об обучении (со сведениями об успеваемости)?</summary>
+            <div>
+                <p>Единый деканат - аудитория 233 (2 этаж старого корпуса).<br>+7(499)973-38-34</p>
+            </div>
+
+        </details>
+        <details>
+            <summary>Где взять справку о наличии и размере стипендии?</summary>
+            <div>
+                <p>Бухгалтерия - аудитория 0732<br>+7(499)-972-94-55</p>
+            </div>
+
+        </details>
+        <details>
+            <summary>Потерял пропуск. Что делать?</summary>
+            <div>
+                <p>Для решения данного вопроса стоит обратиться в единый деканат - аудитория 233<br>+7(499)973-38-34</p>
+            </div>
+
+        </details>
+        <details>
+            <summary>Не удается получить доступ к электронному модульному журналу</summary>
+            <div>
+                <p>Стоит обратиться в единый деканат - 233<br>+7(499)973-38-34</p>
+            </div>
+
+        </details>
+
+        <div class="form">
+            <p id="ask">Остались вопросы?</p>
+            <p id="desk">Заполните поле email<br>и задайте свой вопрос в деканат</p>
+            <div class="col">
+                <form action="">
+                    <input id="email" type="email" required placeholder="Email">
+                    <textarea name="" id="textarea" cols="30" rows="10"  required placeholder="Задайте вопрос"></textarea>
+                    <input id="send" type="submit" value="Спросить">
+                </form>
+                <img src="/img/img/FAQ.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

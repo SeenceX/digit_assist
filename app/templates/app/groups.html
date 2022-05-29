@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+<body>
+{% block container %}
+<div class="container">
+
+    <form action="" method="POST">
+        <div class="disc">Группа</div>
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" class="submit-inp" value="">
+    </form>
+    <div class="telo">
+        {% if data and data != 'not_found' %}
+        <p class="g_name">{{ g_name }}</p>
+        <table>
+            <tr>
+                <th>№</th>
+                <th>ФИО</th>
+                <th>Статус</th>
+            </tr>
+            {% for item in data %}
+                {% if item.4 != 'староста' %}
+                    <tr>
+                        <td>{{ item.0 }}</td>
+                        <td>{{ item.1 }} {{ item.2 }} {{ item.3 }}</td>
+                        <td>{{ item.4 }}</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td style="color: #615FC5;">{{ item.0 }}</td>
+                        <td style="color: #615FC5;">{{ item.1 }} {{ item.2 }} {{ item.3 }}</td>
+                        <td style="color: #615FC5;">{{ item.4 }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            {% else %}
+                {% if data == 'not_found' %}
+                    <p class="not_found">Группа не найдена</p>
+                {% endif %}
+                <img class="bckgr_group" src="/img/img/teacher.svg" alt="">
+
+        {% endif %}
+
+        </table>
+    </div>
+</div>
+
+    <script type="text/javascript">
+
+        $( document ).ready(function() {
+            $("#id_group_name").attr("placeholder", "ИДБ-21-13")
+        });
+    </script>
+
+{% endblock %}
+
+</body>
+</html>
+
